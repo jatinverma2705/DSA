@@ -11,7 +11,7 @@ int main() {
     //string name;
     //taking input
     // cin >> name;
-    // getline(cin,name);
+    // getline(cin,name); -> It says ki hame cin karana h name ke andar
     //printing the string  
     // cout << name << endl;
     // int index=0;
@@ -86,9 +86,10 @@ int main() {
 // string name = "KUMAR AND SONS";
 // string name1 = "AND";
 
-// cout << name.find(name1) << endl;
+// cout << name.find(name1) << endl; -> It will return the index from which "And " is starting.
 // char str[] = "Hello world";
 // cout << str[0];
+//We can't do like size(str) because str is a char array and the size fn only used with STL fnks like vector and strings.
 // string str ;
 // cin >> str;
 // cout << str;
@@ -147,6 +148,5 @@ int main() {
 // char ch[100] ;
 // cin >> ch;
 // cout << sizeof(ch) ;
-
 return 0;
 }

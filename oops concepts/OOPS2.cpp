@@ -1,21 +1,21 @@
 #include<iostream>
 
-using namespace std;
+using namespace std; 
 
-class abc{
-    int x; //if we write mutable before x then we are able to modify x anywhere if the particular member function is const.
+class abc{ 
+    int x; //if we write mutable before  x then we are able to modify x anywhere if the particular member function is const.
     int *y;
-     int z;
+    const int z;
 
-public:
+public: 
 
-    abc(){
-        x = 0;
-        y = new int(0);
+    // abc(){
+    //     x = 0;
+    //     y = new int(0);
        
-    }
+    // } and
 
-    //ctor -> old style
+    //ctor -> old style allProblem
 
     // abc(int _x , int _y, int _z = 0){ //z -> default argument
     //     x = _x;
@@ -24,7 +24,7 @@ public:
     // }
 
     //Works same as ctor
-    //Initialization list -> We can also initialise a const var. in this list.
+    //Initialization list ->  We can also initialise a const var. in this list.
     //Syntax : 
     abc(int _x,int _y,int _z=0):x(_x),y(new int(_y)),z(_z) {
         
@@ -32,10 +32,10 @@ public:
         *y = *y * 10;
     }
 
-    int getX() const
+    int getX() const 
     { 
         
-        cout << x << endl;
+        cout << x << endl; 
     }
 
     void setX(int _val){
@@ -50,12 +50,17 @@ public:
 
     void setY(int _val){
         *y = _val;
-    }
+    } 
 
     int getZ() const 
     {
         return z;
     }
+
+    //default destructor : 
+    // ~class_name(){
+
+   // }
 };
 
 void printABC(const abc&a){
@@ -91,7 +96,7 @@ int main2(){
     // cout << *a << endl;
 
     //3.CONST POINTER BUT NON-CONST DATA
-    /*int *const a = new int(2);
+    /* int *const a = new int(2);
     cout << *a << endl;
     *a = 10;//we can change the data of the pointer.
     int b = 5;
@@ -106,5 +111,6 @@ int main2(){
    int b = 4;
    a = &b; -> Pointer itself can't be reassigned.
    cout << *a << endl;*/ 
+
  return 0;
 }

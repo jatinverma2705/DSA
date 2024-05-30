@@ -9,7 +9,7 @@ using namespace std;
 //Constructor is the only function in cpp which has no return type.
 //ctor -> constructor
 class Student{
-//ACCESS modifiers -> They define scope of access.(public & private).
+//ACCESS modifiers -> They define scope of access.(public & private & protected).
 
  private: 
     string gf;
